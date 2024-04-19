@@ -58,8 +58,10 @@ class _HomePageState extends State<HomePage> {
                     child: Row(
                       children: [
                         Text(
-                          controller.taskList[index].taskName,
+                          controller.taskList[index].taskDetails,
                           textAlign: TextAlign.start,
+                          style: TextStyle(
+                              fontSize: 15, color: AppColor().appBlue),
                         ),
                       ],
                     ),
@@ -105,6 +107,7 @@ class _HomePageState extends State<HomePage> {
                     TextFormField(
                       controller: controller.taskDetailsContoller,
                       decoration: const InputDecoration(
+                        fillColor: Colors.white,
                         label: Text(
                           "Task Details",
                           style: TextStyle(color: Colors.white),

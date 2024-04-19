@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:task_manager/homepage.dart';
+
+import 'package:task_manager/src/Screens/splashscreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: SplashScreen(),
     );
   }
 }
