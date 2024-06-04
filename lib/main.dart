@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:task_manager/src/Screens/splashscreen.dart';
 
+import 'src/theme.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -16,7 +18,9 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: MaterialTheme(TextTheme()).light(),
+      darkTheme: MaterialTheme(TextTheme()).dark(),
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
     );
